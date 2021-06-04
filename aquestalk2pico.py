@@ -94,7 +94,7 @@ else:
 if mode == 0:                                               # 直接、起動した場合
     for word in talk:
         # AquesTalkPi で再生
-        aques_com = 'aquestalkpi/AquesTalkPi ' + word + ' | /usr/bin/aplay &'
+        aques_com = 'aquestalkpi/AquesTalkPi ' + word + ' | /usr/bin/aplay'
         print('MAINPRO1, 開始')                             # 通常起動処理の開始表示
         print('subprocess =',aques_com)                     # スクリプト名を表示
         subprocess.run(aques_com,shell=True)
