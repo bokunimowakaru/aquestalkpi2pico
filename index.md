@@ -90,4 +90,4 @@ Copyright (c) 2021 Wataru KUNINO
 
 - Wi-Fi コンシェルジェ アナウンス担当 が受信可能な文字数制限により 50文字を超える音声記号列が送れません。長文を話したいときは、半角スペースを入れ、送信を分けてください。「日本語を入力すると話します 空白で、長文を分けることも出来ます 長い文章の場合は、適宜分けてください」
 
-by bokunimo.net(https://bokunimo.net/)  
+by <https://bokunimo.net/>  
