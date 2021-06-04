@@ -100,7 +100,7 @@ if mode == 0:                                               # 直接、起動し
         subprocess.run(aques_com,shell=True)
         print('MAINPRO1, 終了')                             # 通常起動処理の終了表示
         # AquesTalkPi で音声記号列（ローマ字）に変換してから AquesTalk Pico に送信
-        aques_com = 'aquestalkpi/AquesTalkPi -t ' + word + '|./aquestalk_k2pico.py SUBPROCESS'
+        aques_com = 'aquestalkpi/AquesTalkPi -t ' + word + '|./aquestalk2pico.py SUBPROCESS'
         print('MAINPRO2, 開始')                             # 通常起動処理の開始表示
         print('subprocess =',aques_com)                     # スクリプト名を表示
         subprocess.run(aques_com,shell=True)
@@ -166,15 +166,15 @@ if com:
 sys.exit()
 
 '''
-pi@raspberrypi:~/iot/voice $ ./aquestalk_k2pico.py 日本語を入力すると話します
-Usage: ./aquestalk_k2pico.py 日本語を入力
+pi@raspberrypi:~/iot/voice $ ./aquestalk2pico.py 日本語を入力すると話します
+Usage: ./aquestalk2pico.py 日本語を入力
 MAINPRO1, 開始
 subprocess = aquestalkpi/AquesTalkPi 日本語を入力すると話します | /usr/bin/aplay
 再生中 WAVE 'stdin' : Signed 16 bit Little Endian, レート 8000 Hz, モノラル
 MAINPRO1, 終了
 MAINPRO2, 開始
-subprocess = aquestalkpi/AquesTalkPi -t 日本語を入力すると話します|./aquestalk_k2pico.py SUBPROCESS
-Usage: ./aquestalk_k2pico.py 日本語を入力
+subprocess = aquestalkpi/AquesTalkPi -t 日本語を入力すると話します|./aquestalk2pico.py SUBPROCESS
+Usage: ./aquestalk2pico.py 日本語を入力
 SUBPRO, this subprocess is called by a script
 ニホンゴオ/ニューリョ_クスル'ト/ハナシマ'_ス。
 nihonngoo/nyu-ryo_kusuru'to/hanasima'_su.
