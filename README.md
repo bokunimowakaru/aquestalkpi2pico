@@ -1,0 +1,2 @@
+# aquestalkpi2pico
+AquesTalkPiの言語処理エンジンAqKanji2Koeを使ってAquesTalk Pico LSIを動かす
