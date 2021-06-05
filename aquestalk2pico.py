@@ -152,6 +152,8 @@ else:                                                       # 従属起動のと
                 Vindex = index_n % 5
                 roman += romanCD[Cindex] + romanV[Vindex]
                 continue
+            if c == '"':
+                continue
             roman += c
         print(roman)
         for ip in aques_ip:
@@ -159,8 +161,8 @@ else:                                                       # 従属起動のと
             res = requests.get(url_s)               # HTTPアクセスを実行
             print(res.status_code)                  # 受信テキストを変数res_sへ
             res.close()                             # HTTPアクセスの終了
-            if com:
-                com.write((roman + '\r').encode())
+        if com:
+            com.write((roman + '\r').encode())
 if com:
     com.close()
 sys.exit()
