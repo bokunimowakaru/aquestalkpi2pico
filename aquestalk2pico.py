@@ -5,7 +5,7 @@
 # 日本語の文章を AquesTalk Pico LSI 用の音声記号列（ローマ字）に
 # 変換するプログラムです。
 #
-# 入力した文字列を AqKanji2Koe-A に渡しすと、カタカナ表記の音声
+# 入力した文字列を AqKanji2Koe-A に渡すと、カタカナ表記の音声
 # 記号列が得られるので、本プログラムではカタカナ部をローマ字に
 # 変換します。
 #
@@ -107,7 +107,7 @@ if mode == 0:                                               # 直接、起動し
         print('MAINPRO2, 終了')                             # 通常起動処理の終了表示
     sys.exit()                                              # プログラムを終了する
 
-else:                                                       # modeが1の時に繰返し処理
+else:                                                       # 従属従属のとき
     com = None
     if len(tty) > 0:
         com = serial.Serial(tty,9600,timeout=None)
