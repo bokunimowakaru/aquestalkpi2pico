@@ -107,7 +107,7 @@ if mode == 0:                                               # 直接、起動し
         print('MAINPRO2, 終了')                             # 通常起動処理の終了表示
     sys.exit()                                              # プログラムを終了する
 
-else:                                                       # 従属従属のとき
+else:                                                       # 従属起動のとき
     com = None
     if len(tty) > 0:
         com = serial.Serial(tty,9600,timeout=None)
