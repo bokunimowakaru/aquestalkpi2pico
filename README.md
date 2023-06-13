@@ -3,7 +3,7 @@
 「日本語を話します」のような漢字交じりの日本語から、「nihonngoo/hanasima'_su.」のような音声記号列（ローマ字）に変換し、USBシリアルまたはWi-Fiで接続したAquesTalk Pico LSIに音声記号列を転送するプログラムです。  
 音声記号列への変換には、㈱アクエストの AquesTalkPi に含まれる言語処理エンジン AqKanji2Koe を使用しました。
 
-![音声記号列に変換する説明図](http://git.bokunimo.com/aquestalkpi2pico/fig_aquestalk2pico.jpg)
+![音声記号列に変換する説明図](https://github.com/bokunimowakaru/aquestalkpi2pico/blob/gh-pages/fig_aquestalk2pico.jpg)  
 
 ## 特長
 
